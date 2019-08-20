@@ -1,0 +1,8 @@
+<table>
+    <tr *ngFor = "let mat of matrix">
+      <th *ngFor="let m of mat" >
+          <img *ngIf="m == mario" src="../assets/mario.png" alt="mario" width="45px">
+          <img *ngIf="power.includes(m) && m != mario" src="../assets/mushroom.png" alt="mushroom">
+      </th>    
+    </tr>
+  </table>
